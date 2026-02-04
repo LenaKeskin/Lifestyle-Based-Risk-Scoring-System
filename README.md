@@ -1,42 +1,60 @@
-# # Günlük Alışkanlıklardan Kaynaklanan Hastalık Riski Analizi
-Günlük Alışkanlıklardan Kaynaklanan Hastalık Riski projesini 2 kişilik takım olarak yapmış bulunmaktayız.
+# Lifestyle-Based Risk Scoring System
 
-Bu proje, bireylerin günlük yaşam alışkanlıklarının sağlık üzerindeki etkilerini analiz ederek, potansiyel hastalık risklerini tahmin etmeyi amaçlamaktadır. Veri seti Kaggle üzerinden temin edilmiştir ve proje içerisinde veri analizi, makine öğrenmesi, görselleştirme, otomasyon, web arayüzü, PDF raporlama ve konteynerleştirme gibi çeşitli bileşenler barındırmaktadır.
+This project was developed by a two-person team as an end-to-end data analytics and machine learning case study.
+The main goal is to analyze daily lifestyle and behavioral data and demonstrate how supervised learning techniques
+can be used to build a data-driven risk scoring and classification system.
 
-## 👥 Takım Üyeleri ve Katkılar
-
-**Lena Keskin**
-- Veri analizi ve görselleştirme (Power BI)
-- Makine öğrenmesi modelleri (SVM, Naive Bayes, Karar Ağaçları)
-- Özellik mühendisliği
-- WSL 2 & Docker kurulumu ve yapılandırması
-- Dockerfile oluşturma ve container çalıştırma
-
-**Nehir Kurudere**
-- Veri ön işleme (eksik verilerin giderilmesi, dönüştürmeler)
-- Otomasyon sistemi (schedule/cron gibi zamanlama mekanizmaları)
-- Web arayüzü (Flask tabanlı)
-- PDF çıktısı ile raporlama
+The project covers the full pipeline, including data analysis, machine learning, visualization, automation,
+web application development, PDF reporting, and containerization.
+The dataset used in this project was obtained from Kaggle.
 
 ---
 
-## 📁 Proje Yapısı
+## Project Scope
 
-```bash
-.
-├── app/
-│   ├── app.py              # Flask uygulaması
-│   ├── static/             # CSS / JS / Görseller
-│   ├── templates/          # HTML sayfaları
-│   └── reports/            # Oluşturulan PDF raporları
-├── dataset/
-│   └── lifestyle_data.csv  # Kaggle'dan alınan veri seti
-├── dockerfile              # Docker imajı oluşturmak için
-├── requirements.txt        # Python bağımlılıkları
-├── automation/
-│   ├── schedule_script.py  # Zamanlanmış görev scripti
-├── powerbi/
-│   └── analysis.pbix       # Power BI görselleştirmeleri
-├── README.md               # Bu dosya
-## WEB ARAYÜZÜ
-Web arayüzüne http://localhost:5000 adresinden erişilebilir.
+- Exploratory Data Analysis (EDA) on structured lifestyle data
+- Feature engineering and preprocessing
+- Supervised machine learning for risk classification
+- Model comparison and evaluation
+- Interactive visualizations and dashboards
+- Automation of data processing tasks
+- Web-based interface for user interaction
+- PDF report generation
+- Docker-based deployment
+
+---
+
+## Team Members and Contributions
+
+### Lena Keskin
+- Data analysis and visualization (Power BI)
+- Machine learning models (SVM, Naive Bayes, Decision Trees)
+- Feature engineering
+- WSL 2 & Docker setup and configuration
+- Dockerfile creation and container execution
+
+### Nehir Kurudere
+- Data preprocessing (handling missing values and transformations)
+- Automation system (scheduled tasks using cron / scheduler)
+- Web interface development (Flask-based)
+- PDF report generation
+
+---
+## Technologies Used
+
+- **Programming Language:** Python  
+- **Data Analysis & ML:** Pandas, NumPy, Scikit-learn  
+- **Visualization:** Power BI, Matplotlib, Seaborn  
+- **Web Framework:** Flask  
+- **Automation:** Scheduled scripts (cron/scheduler)  
+- **Containerization:** Docker  
+- **Environment:** WSL 2  
+
+---
+
+## Disclaimer
+
+This project is developed for educational and analytical purposes only.
+It does not provide medical advice, diagnosis, or health-related recommendations.
+All outputs should be interpreted as part of a data science case study.
+
